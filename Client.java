@@ -2,7 +2,7 @@ package security_project;
 import java.io.*;
 import java.util.*;
 import java.math.*;
-import java.security.*;
+import java.security.*;https://github.com/jolycode/PGP/blob/main/Client.java
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -108,14 +108,5 @@ public class Client {
         dataOutputStream.write(key); 
     } 
 }
-/*
-client writes message to server.
 
-message provided as SHA-512 hash 
-hash signed by RSA,hash is encrypted by private keys of client. The inputs to RSA are Private Keys of client and hash.output from RSA is digitally signed hash or encrypted hash .
-
-output encrypted by DES
-
-message encrypted using SecretKey,sent server.Encrypt SecretKey of DES with server PublicKey.use RSA for this and the inputs to it will be the Public key of server and SecretKey.
-*/
 
