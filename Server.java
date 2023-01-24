@@ -122,9 +122,3 @@ public class Server {
 	         }
 	    }
 }
-//decrypt the SecretKey of DES with his Private Keys
-//inputs to RSA algorithm  will be Private Keys. The output from RSA will give  the SecretKey.
-//zip
-/*From  above step,will get signed hash and the original message.verify signed hash.For this,calculate the hash of the original message by SHA-512.
-also decrypt signed hash with the public keys of client by using RSA. */
-//Compare the decrypted_hash and calculated_hash. If they turn out to be the same, then authentication is achieved which means that the message was indeed sent by client.
